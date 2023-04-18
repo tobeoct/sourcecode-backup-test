@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "AvNozszXsG86OII04L5BWKnPM409g7wRgoq3voHE0vo5F5j1DVngpXjiOhsQfc6zMYPQVveRfww8DGTkfnFqJw==",
+  "success": true,
+  "projectFilePath": "C:\\Appzone\\Projects\\SourceCodeBackupPoC\\SourceCodeBackupPoC\\SourceCodeBackupPoC\\SourceCodeBackupPoC.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://13.90.93.249/NuggetFingrid/api/v1/FeedService.svc/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

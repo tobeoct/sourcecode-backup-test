@@ -1,0 +1,12 @@
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\bin\Debug\net6.0\SourceCodeBackupPoC.deps.json
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\bin\Debug\net6.0\SourceCodeBackupPoC.dll
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\bin\Debug\net6.0\SourceCodeBackupPoC.pdb
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\obj\Debug\net6.0\SourceCodeBackupPoC.csproj.AssemblyReference.cache
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\obj\Debug\net6.0\SourceCodeBackupPoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\obj\Debug\net6.0\SourceCodeBackupPoC.AssemblyInfoInputs.cache
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\obj\Debug\net6.0\SourceCodeBackupPoC.AssemblyInfo.cs
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\obj\Debug\net6.0\SourceCodeBackupPoC.csproj.CoreCompileInputs.cache
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\obj\Debug\net6.0\SourceCodeBackupPoC.dll
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\obj\Debug\net6.0\refint\SourceCodeBackupPoC.dll
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\obj\Debug\net6.0\SourceCodeBackupPoC.pdb
+C:\Appzone\Projects\SourceCodeBackupPoC\SourceCodeBackupPoC\SourceCodeBackupPoC\obj\Debug\net6.0\ref\SourceCodeBackupPoC.dll

@@ -2,13 +2,16 @@ pipelines:
   branches:
     master:
       - step:
-          name: MIrror Repository Changes to GitHub
+          name: Mirror Repository Changes to GitHub
           image: alpine/git:latest
           clone:
             enabled: false
           script:
             - if [ "$BITBUCKET_TAG" ]; then
+                - echo "Pipeline triggered by new tag"
                 - git clone --bare git@bitbucket.org:appzonegroup/sourcecode-backup-test.git
                 - cd sourcecode-backup-test.git
                 - git push --mirror git@github.com:tobeoct/heritage-middleware.git
+            - else
+                - echo "Pipeline was not triggered by new tag"
             - fi;

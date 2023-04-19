@@ -24,7 +24,7 @@ pipelines:
           script:
             - echo "Running Script"
             - echo "New tag $BITBUCKET_TAG"
-            - if git rev-list -n 1 --branches=master --tags --grep '^$BITBUCKET_TAG$' >/dev/null; then
+            - if git rev-list -n 1 --branches=master --tags --grep "^$BITBUCKET_TAG$" >/dev/null; then
               - echo "Triggered on tag creation"
               - git clone --bare --branch master git@bitbucket.org:appzonegroup/sourcecode-backup-test.git
               - cd sourcecode-backup-test.git

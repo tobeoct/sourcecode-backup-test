@@ -8,7 +8,7 @@ pipelines:
             enabled: false
           script:
             - echo "Running Script"
-            - echo "$BITBUCKET_TAG"
+            - echo "New tag- $BITBUCKET_TAG"
             - if [ "$BITBUCKET_TAG" ]; then
                 - echo "Triggered on tag creation"
                 - git clone --bare --branch master git@bitbucket.org:appzonegroup/sourcecode-backup-test.git
@@ -23,7 +23,8 @@ pipelines:
           image: alpine/git
           script:
             - echo "Running Script"
-            - if [[ "$BITBUCKET_BRANCH" =~ ^master$ ]]; then
+            - echo "New tag- $BITBUCKET_TAG"
+            - if git rev-list -n 1 --branches=master --tags --grep '^$BITBUCKET_TAG$' >/dev/null; then
               - echo "Triggered on tag creation"
               - git clone --bare --branch master git@bitbucket.org:appzonegroup/sourcecode-backup-test.git
               - cd sourcecode-backup-test.git

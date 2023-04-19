@@ -8,7 +8,7 @@ pipelines:
             enabled: false
           script:
             - echo "Running Script"
-            - echo $BITBUCKET_TAG
+            - echo "$BITBUCKET_TAG"
             - if [ "$BITBUCKET_TAG" ]; then
                 - echo "Triggered on tag creation"
                 - git clone --bare --branch master git@bitbucket.org:appzonegroup/sourcecode-backup-test.git

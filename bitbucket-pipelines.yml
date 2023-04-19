@@ -26,4 +26,4 @@ pipelines:
               - cd sourcecode-backup-test.git
               - git push --mirror git@github.com:tobeoct/heritage-middleware.git
               - echo "Mirroring Completed"
-          - fi;
+            - fi;

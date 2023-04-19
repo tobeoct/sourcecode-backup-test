@@ -23,7 +23,7 @@ pipelines:
           image: alpine/git
           script:
             - echo "Running Script"
-            - echo "New tag $BITBUCKET_TAG"
+            - echo "Branch Name $BITBUCKET_BRANCH"
             - if [[ $BITBUCKET_BRANCH == *"master"* ]]; then
               - echo "Triggered on tag creation"
               - git clone --bare --branch master git@bitbucket.org:appzonegroup/sourcecode-backup-test.git

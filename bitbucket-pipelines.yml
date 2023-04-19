@@ -25,7 +25,7 @@ pipelines:
             - git fetch --all --tags
             - TAG_COMMIT=$(git rev-list -n 1 $BITBUCKET_TAG)
             - echo "Tag Commit ID $TAG_COMMIT"
-            - BRANCH_NAME=$(git branch -a --contains $TAG_COMMIT)
+            - BRANCH_NAME=$(git show-ref --dereference | grep $TAG_COMMIT | grep -v tags | awk '{print $2}' | sed 's#refs/remotes/origin/##')
             - echo "Branch name $BRANCH_NAME"
             - if [[ "$BRANCH_NAME" =~ "master" ]]; then
               - echo "Triggered on tag creation"

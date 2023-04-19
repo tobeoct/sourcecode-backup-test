@@ -1,11 +1,14 @@
 pipelines:
-  default:
-    - step:
-        name: Sync GitHub Mirror
-        image: alpine/git:latest
-        clone:
-          enabled: false
-        script:
-          - git clone --bare git@bitbucket.org:appzonegroup/sourcecode-backup-test.git
-          - cd sourcecode-backup-test.git
-          - git push --mirror git@github.com:tobeoct/heritage-middleware.git
+  branches:
+    master:
+      - step:
+          name: MIrror Repository Changes to GitHub
+          image: alpine/git:latest
+          clone:
+            enabled: false
+          script:
+            - if [ "$BITBUCKET_TAG" ]; then
+                git clone --bare git@bitbucket.org:appzonegroup/sourcecode-backup-test.git
+                cd sourcecode-backup-test.git
+                git push --mirror git@github.com:tobeoct/heritage-middleware.git
+              fi

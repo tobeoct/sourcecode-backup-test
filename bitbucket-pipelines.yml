@@ -2,7 +2,7 @@ pipelines:
   branches:
     master:
       - step:
-          name: MIrror Repository Changes to GitHub
+          name: Mirror Repository Changes to GitHub
           image: alpine/git:latest
           clone:
             enabled: false

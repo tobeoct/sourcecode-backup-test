@@ -22,15 +22,8 @@ pipelines:
           name: Mirror to GitHub
           image: alpine/git
           script:
-            - git fetch --all --tags
-            - TAG_COMMIT=$(git rev-list -n 1 $BITBUCKET_TAG)
-            - echo "Tag Commit ID $TAG_COMMIT"
-            - BRANCH_NAME=$(git show-ref --dereference | grep $TAG_COMMIT | grep -v tags | awk '{print $2}' | sed 's#refs/remotes/origin/##')
-            - echo "Branch name $BRANCH_NAME"
-            - if [[ "$BRANCH_NAME" =~ "master" ]]; then
-              - echo "Triggered on tag creation"
-              - git clone --bare --branch master git@bitbucket.org:appzonegroup/sourcecode-backup-test.git
-              - cd sourcecode-backup-test.git
-              - git push --mirror git@github.com:tobeoct/heritage-middleware.git
-              - echo "Mirroring Completed"
-            - fi;
+            - echo "Triggered on tag creation"
+            - git clone --bare --branch master git@bitbucket.org:appzonegroup/sourcecode-backup-test.git
+            - cd sourcecode-backup-test.git
+            - git push --mirror git@github.com:tobeoct/heritage-middleware.git
+            - echo "Mirroring Completed"

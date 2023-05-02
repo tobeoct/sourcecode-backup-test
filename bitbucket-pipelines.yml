@@ -25,5 +25,5 @@ pipelines:
             - echo "Triggered on tag creation"
             - git clone --bare --tags --branch master git@bitbucket.org:appzonegroup/sourcecode-backup-test.git
             - cd sourcecode-backup-test.git
-            - git push --mirror git@github.com:tobeoct/sourcecode-backup-poc-bitbucket.git
+            - git push --mirror git@github.com:tobeoct/sourcecode-backup-poc-teamcity.git
             - echo "Mirroring Completed"
